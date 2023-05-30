@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Eloy Garcia">
+  <title>Product example · Bootstrap v5.2</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png"
+    sizes="180x180">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32"
+    type="image/png">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16"
+    type="image/png">
+  <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg"
+    color="#712cf9">
+  <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+
+
+  <style>
+    :root {
+      --lightblue: #f6f9fc;
+      --pr: #7c4dff;
+    }
+
+    a,
+    a:hover {
+      color: var(--pr);
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .bg-lightblue {
+      background: var(--lightblue);
+    }
+
+    .bg-pr {
+      background: var(--pr);
+    }
+
+    .text-pr {
+      color: var(--pr);
+    }
+
+    .container-fluid-max {
+      max-width: 1440px;
+    }
+
+    .cover {
+      background: no-repeat center/cover;
+    }
+
+    .p-15 {
+      padding: 15px;
+    }
+
+
+
+    /* BANNER SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .hero {
+      background-attachment: fixed;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.5) 0,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0.1) 100%);
+    }
+
+    .hero .container-fluid {
+      z-index: 10;
+    }
+
+    /* POPULAR DESTINATIONS SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .popular-destinations figure {
+      margin-bottom: 30px;
+    }
+
+    .popular-destinations figcaption {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .popular-destinations img {
+      filter: grayscale(100%) blur(3px);
+      transition: transform 0.5s, filter 0.75s;
+    }
+
+    .popular-destinations a:hover img {
+      transform: scale(1.25);
+      filter: none;
+    }
+
+
+
+    /* MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    /* MEDIUM SCREENS */
+    @media screen and (max-width: 991px) {
+      .page-header {
+        background: var(--pr);
+      }
+    }
+
+    /* SMALL SCREENS */
+    @media screen and (max-width: 767px) {
+      .page-footer .footer-child {
+        text-align: center;
+      }
+    }
+
+   
+  </style>
+
+
+  <!-- Custom styles for this template -->
+
+</head>
+
+<body>
+  <main>
+    <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero"
+      style="background-image:url(https://www.xtrafondos.com/wallpapers/paisaje-en-noruega-atardecer-en-las-montanas-4804.jpg);">
+      <div class="container-fluid container-fluid-max">
+        <div class="row d-flex mx-auto justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <h1 class="text-white">Explore the Charms of Germany and Norway!</h1>
+            <div class="mt-3">
+              <a class="btn bg-pr text-white mr-2" href="" role="button">Book Now</a>
+              <a class="btn bg-pr text-white" href="" role="button">Select Your Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process ">
+      <div class="container-fluid container-fluid-max">
+        <div class="row text-center py-5">
+          <div class="col-12 pb-4"> 
+            <h2 class="text-pr">How It Works</h2>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-pr"></i>
+              <i class="fas fa-map-marked fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-3 text-pr h4">Choose a destination</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed repudiandae.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-pr"></i>
+              <i class="fas fa-plane fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-3 text-pr h4">Book a flight</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed repudiandae.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-pr"></i>
+              <i class="fas fa-car fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-3 text-pr h4">Rent a car</h3>
+            <p>Nor again is there anyone who loves or pursues or desires to obtain pain.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-pr"></i>
+              <i class="fas fa-home fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-3 text-pr h4">Rent an appartment</h3>
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+              ex ea commodi.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-destinations" class="featured-destinations" style="background: rgb(246,249,252);
+    background: linear-gradient(180deg, rgba(246,249,252,1) 0%, rgba(124,77,255,1) 49%, rgba(246,249,252,1) 100%);">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0">
+          <div class="p-15">
+            <h3>Explore Norway</h3>
+            <p><strong>Ålesund</strong> is a town and municipality in Møre og Romsdal County, Norway. It is part of the
+              traditional district of Sunnmøre and the centre of the Ålesund Region. It is a sea port and is noted for
+              its concentration of Art Nouveau
+              architecture. The town of Ålesund is the administrative centre of Ålesund Municipality, as well as the
+              principal shipping town of the Sunnmøre district. </p>
+            <p>The 99-square-kilometre (38 sq mi) municipality is the 382nd largest by area out of the 422
+              municipalities in Norway. Ålesund is the 17th most populous municipality in Norway with a population of
+              47,199. The municipality's population density
+              is 506.6 inhabitants per square kilometre (1,312/sq mi) and its population has increased by 14% over the
+              last decade.</p>
+            <a class="btn bg-pr text-white" target="_blank" href="https://github.com/eloygar" role="button">Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-0 order-md-1">
+          <div class="vh-100 cover"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/71/Vista_de_%C3%85lesund_desde_Aksla%2C_Noruega%2C_2019-09-01%2C_DD_16.jpg);">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-2">
+          <div class="vh-100 cover"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6b/Castillo_de_Neuschwanstein.jpg);">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex align-items-center order-3">
+          <div class="p-15">
+            <h3>Explore Germany</h3>
+            <p><strong>Neuschwanstein Castle</strong> is a 19th-century Romanesque Revival palace on a rugged hill above
+              the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was commissioned by
+              Ludwig II of Bavaria as a retreat
+              and in honour of Richard Wagner. Ludwig paid for the palace out of his personal fortune and by means of
+              extensive borrowing, rather than Bavarian public funds.</p>
+            <p>The castle was intended as a home for the king, until he died in 1886. It was open to the public shortly
+              after his death. Since then more than 61 million people have visited Neuschwanstein Castle. More than 1.3
+              million people visit annually,
+              with as many as 6,000 per day in the summer.</p>
+            <a class="btn bg-pr text-white" target="_blank" href="https://en.wikipedia.org/wiki/Neuschwanstein_Castle"
+              role="button">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popular-destinations" class="popular-destinations py-5" style="background: rgb(246,249,252);
+    background: linear-gradient(180deg, rgba(246,249,252,1) 53%, rgba(124,77,255,1) 100%);">
+      <div class="container-fluid container-fluid-max">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center mx-auto">
+            <h2 class="pb-3 text-pr">Popular Destinations</h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <a href="" class="text-white">
+              <figure class="position-relative overflow-hidden">
+                <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/Vienna.jpg"
+                  alt="Vienna">
+                <figcaption class="d-flex align-items-center justify-content-center position-absolute">
+                  <h3>Vienna</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <a href="" class="text-white">
+              <figure class="position-relative overflow-hidden">
+                <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/Edinburgh.jpg"
+                  alt="Edinburgh">
+                <figcaption class="d-flex align-items-center justify-content-center position-absolute">
+                  <h3>Edinburgh</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <a href="" class="text-white">
+              <figure class="position-relative overflow-hidden">
+                <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/new_york.jpg"
+                  alt="New York">
+                <figcaption class="d-flex align-items-center justify-content-center position-absolute">
+                  <h3>New York</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6">
+            <a href="" class="text-white">
+              <figure class="position-relative overflow-hidden">
+                <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/porto.jpg" alt="Porto">
+                <figcaption class="d-flex align-items-center justify-content-center position-absolute">
+                  <h3>Porto</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="" class="text-white">
+              <figure class="position-relative overflow-hidden">
+                <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/manarola.jpg"
+                  alt="Manarola">
+                <figcaption class="d-flex align-items-center justify-content-center position-absolute">
+                  <h3>Manarola</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <a class="btn bg-pr text-white" href="https://github.com/eloygar" role="button">More Destinations </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #7c4dff">
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Company name</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Bootstrap Angular</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+<!--linkado a el js de bootstrap, siempre ultima linea-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
